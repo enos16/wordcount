@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Word Count System</title>
+        <meta charset = "utf-8" />
+    </head>
+    <body>
+        <header>
+            <hgroup>
+                <h1 style = "color: red;">Word Count Program</h1>
+            </hgroup>
+        </header>
+        <nav>
+            <a href = "{% url 'about' %}"> About Us </a>
+        </nav>
+        <section>
+            <form action = "{% url 'count' %}">
+                <textarea cols = "40" rows = "10" name = "fulltext"></textarea><br />
+                <input type = "submit" value = "Count!" />
+            </form>
+        </section>
+        <aside></aside>
+        <footer></footer>
+    </body>
+</html>
